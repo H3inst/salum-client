@@ -1,0 +1,19 @@
+.textfield {
+    padding: 8px 10px;
+    outline: 0;
+    border: 2px solid transparent;
+    font-size: $font_size_normal;
+    border-radius: $border_radius;
+
+    &::placeholder {
+        color: $gray_dark_color;
+    }
+    
+    @at-root #{&}__filled {
+        background-color: $light_color_20;
+
+        &:focus {
+            border-bottom-color: $primary_color;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+// Color palette
+$primary_color: #d83b01;
+$primary_color_light: #eef1fb;
+$primary_color_opacity_1: rgba($primary_color, 0.1);
+$primary_color_dark: #002441;
+
+$light_color_10: #f3f2f1;
+$light_color_20: #edebe9;
+$light_color_30: #e1dfdd;
+
+$white_color: #FFFFFF;
+$black_color: #000000;
+
+$gray_dark_color: #363636;
+
+// Typography vars
+$font_size_large: 2.2rem;
+$font_size_normal: 1.4rem;
+$font_size_small: 1.2rem;
+
+$font_weight_black: 900;
+$font_weight_bold: 700;
+$font_weight_semibold: 600;
+$font_weight_normal: 400;
+
+// Others
+$border_radius: 0.3rem;
+$box_shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);

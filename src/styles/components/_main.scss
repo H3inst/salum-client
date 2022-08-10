@@ -1,0 +1,42 @@
+.main-content {
+    flex: 1;
+    overflow: auto;
+
+    @at-root #{&}__header {
+        margin: 20px 50px 0px 50px;
+        font-size: $font_size_large;
+        font-weight: $font_weight_bold;
+    }
+}
+
+.main-navigation {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $light_color_30;
+    border-collapse: collapse;
+    background-color: $white_color;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0px 50px;
+    
+    @at-root #{&}__item {
+        font-size: $font_size_normal;
+        font-weight: $font_weight_semibold;
+        padding: 10px 15px;
+        margin: 0;
+        cursor: pointer;
+        user-select: none;
+
+        &.item-disabled {
+            color: #aaa;
+            cursor: default;
+        }
+
+        &.item-active {
+            border-bottom: 2px solid $primary_color;
+        }
+    }
+}

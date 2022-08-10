@@ -1,0 +1,25 @@
+.typography {
+    margin: 0;
+
+    @at-root #{&}__header {
+        font-size: $font_size_large;
+        font-weight: $font_weight_bold;
+    }
+
+    @at-root #{&}__parraf {
+        font-size: $font_size_normal;
+        font-weight: $font_weight_normal;
+    }
+
+    @at-root #{&}__subtitle {
+        font-size: $font_size_small;
+        font-weight: $font_size_normal;
+    }
+
+    @at-root #{&}__link {
+        font-size: $font_size_normal;
+        font-weight: $font_weight_normal;
+        color: $primary_color;
+        text-decoration: none; 
+    }
+}

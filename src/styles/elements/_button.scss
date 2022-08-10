@@ -1,0 +1,23 @@
+.button {
+    padding: 6px 12px;
+    background-color: $primary_color_opacity_1;
+    color: $primary_color;
+    font-size: $font_size_normal;
+    font-weight: $font_weight_semibold;
+    border: 2px solid transparent;
+    border-radius: $border_radius;
+    cursor: pointer;
+
+    @at-root #{&}__large {
+        padding: 8px 12px;
+    }
+
+    @at-root #{&}__primary {
+        background-color: $primary_color;
+        color: $white_color;
+
+        &:active {
+            background-color: darken($primary_color, $amount: 5%);
+        }
+    }
+}
