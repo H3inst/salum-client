@@ -9,23 +9,27 @@ const routes = {
 
     // Workspace
     workspace: '/workspace',
-    get workspaceHome() {
-        return `${this.workspace}/home`;
+    
+    get workspaceS() {
+        return `${this.workspace}/subject`;
     },
-    get workspaceActivities() {
-        return `${this.workspace}/activities`;
+    get workspaceSubjectId() {
+        return `${this.workspaceS}/:subjectId`;
     },
-    get workspaceConversation() {
-        return `${this.workspace}/conversation`;
+    get workspaceSubjectActivities() {
+        return `${this.workspaceSubjectId}/activities`;
     },
-    get workspaceAttendance() {
-        return `${this.workspace}/attendance`;
+    get workspaceSubjectConversation() {
+        return `${this.workspaceSubjectId}/conversation`;
     },
-    get workspaceUsers() {
-        return `${this.workspace}/users`;
+    get workspaceSubjectAttendance() {
+        return `${this.workspaceSubjectId}/attendance`;
     },
-    get workspaceSettings() {
-        return `${this.workspace}/settings`;
+    get workspaceSubjectUsers() {
+        return `${this.workspaceSubjectId}/users`;
+    },
+    get workspaceSubjectSettings() {
+        return `${this.workspaceSubjectId}/settings`;
     }
 };
 

@@ -7,11 +7,15 @@
         font-size: $font_size_large;
         font-weight: $font_weight_bold;
     }
+
+    @at-root #{&}__body {
+        padding: 20px 50px;
+    }
 }
 
 .main-navigation {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid $light_color_30;
@@ -21,14 +25,17 @@
     top: 0;
     left: 0;
     padding: 0px 50px;
-    
+
     @at-root #{&}__item {
+        color: $gray_dark_color;
         font-size: $font_size_normal;
         font-weight: $font_weight_semibold;
-        padding: 10px 15px;
-        margin: 0;
+        margin-right: 20px;
+        padding: 10px 0px;
         cursor: pointer;
         user-select: none;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
 
         &.item-disabled {
             color: #aaa;
@@ -36,7 +43,7 @@
         }
 
         &.item-active {
-            border-bottom: 2px solid $primary_color;
+            border-color: $primary_color;
         }
     }
 }
