@@ -24,6 +24,7 @@ function RootRouter() {
                 <Route path={routes.workspace} element={<Workspace />}>
                     <Route path="*" element={<Navigate to={routes.workspace} />} />
                     <Route path={routes.workspaceSubjectId} element={<Subject />}>
+                        <Route index element={<Navigate to={routes.workspaceSubjectActivities} />} />
                         <Route path={routes.workspaceSubjectActivities} element={<h1>Activities</h1>} />
                         <Route path={routes.workspaceSubjectConversation} element={<h1>Conversation</h1>} />
                         <Route path={routes.workspaceSubjectAttendance} element={<h1>Attendance</h1>} />
