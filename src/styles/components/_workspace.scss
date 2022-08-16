@@ -44,6 +44,7 @@
             object-fit: cover;
             cursor: pointer;
         }
+
         @at-root #{&}-name {
             @extend .typography;
             font-size: $font_size_normal;
@@ -66,11 +67,18 @@
             display: flex;
             align-items: center;
             user-select: none;
+            text-decoration: none;
+            color: inherit;
 
             &:hover {
                 background-color: $primary_color_opacity_1;
                 color: $primary_color;
             }
+        }
+
+        .list-item__active {
+            background-color: $primary_color_opacity_1;
+            color: $primary_color;
         }
     }
 }

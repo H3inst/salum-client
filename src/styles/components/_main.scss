@@ -43,6 +43,7 @@
         }
 
         &.item-active {
+            color: $primary_color;
             border-color: $primary_color;
         }
     }

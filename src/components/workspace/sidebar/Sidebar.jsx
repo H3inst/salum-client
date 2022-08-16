@@ -1,4 +1,31 @@
+import classNames from 'classnames';
+import { generatePath, NavLink } from 'react-router-dom';
+import routes from '../../../constants/routes';
+
 function Sidebar() {
+
+    const testData = [
+        {
+            subject_id: 'o92F92gVs2',
+            subject_name: 'Matematicas'
+        },
+        {
+            subject_id: '2foVis35kL',
+            subject_name: 'Sociales'
+        },
+        {
+            subject_id: 'g3lfaAf3kf',
+            subject_name: 'Naturales'
+        },
+        {
+            subject_id: 'oP3kSmv94f2',
+            subject_name: 'Filosofia'
+        },
+        {
+            subject_id: 'mA2kf032jaW',
+            subject_name: 'Ingles'
+        },
+    ];
 
     const render = () => {
         return (
@@ -10,26 +37,21 @@ function Sidebar() {
                 </div>
                 <div className="divider"></div>
                 <div className="workspace-sidebar__list">
-                    <div className="workspace-sidebar__list-item">
-                        <div className="circle mr-10" style={{ backgroundColor: '#aaa' }}></div>
-                        Matemáticas
-                    </div>
-                    <div className="workspace-sidebar__list-item">
-                        <div className="circle mr-10" style={{ backgroundColor: '#aaa' }}></div>
-                        Ciencias sociales
-                    </div>
-                    <div className="workspace-sidebar__list-item">
-                        <div className="circle mr-10" style={{ backgroundColor: '#aaa' }}></div>
-                        Filosofía
-                    </div>
-                    <div className="workspace-sidebar__list-item">
-                        <div className="circle mr-10" style={{ backgroundColor: '#aaa' }}></div>
-                        Ciencias naturales
-                    </div>
-                    <div className="workspace-sidebar__list-item">
-                        <div className="circle mr-10" style={{ backgroundColor: '#aaa' }}></div>
-                        Inglés
-                    </div>
+                    {testData.map((subject) => (
+                        <NavLink
+                            key={subject.subject_id}
+                            to={generatePath(routes.workspaceSubjectId, {
+                                subjectId: subject.subject_id
+                            })}
+                            className={({ isActive }) => classNames(
+                                "workspace-sidebar__list-item",
+                                isActive && "list-item__active"
+                            )}
+                        >
+                            <div className="circle mr-10" style={{ backgroundColor: '#aaa' }}></div>
+                            {subject.subject_name}
+                        </NavLink>
+                    ))}
                 </div>
             </div>
         );
