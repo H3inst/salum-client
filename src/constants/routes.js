@@ -14,22 +14,22 @@ const routes = {
         return `${this.workspace}/subject`;
     },
     get workspaceSubjectId() {
-        return `${this.workspaceS}/:subjectId`;
+        return `${this.workspaceS}/:subjectId/`;
     },
     get workspaceSubjectActivities() {
-        return `${this.workspaceSubjectId}/activities`;
+        return `activities`;
     },
     get workspaceSubjectConversation() {
-        return `${this.workspaceSubjectId}/conversation`;
+        return `conversation`;
     },
     get workspaceSubjectAttendance() {
-        return `${this.workspaceSubjectId}/attendance`;
+        return `attendance`;
     },
     get workspaceSubjectUsers() {
-        return `${this.workspaceSubjectId}/users`;
+        return `users`;
     },
     get workspaceSubjectSettings() {
-        return `${this.workspaceSubjectId}/settings`;
+        return `settings`;
     }
 };
 
