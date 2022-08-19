@@ -37,6 +37,9 @@ function Sidebar() {
                 </div>
                 <div className="divider"></div>
                 <div className="workspace-sidebar__list">
+                    <button className="button button__primary w-100 mb-10">
+                        Create subject
+                    </button>
                     {testData.map((subject) => (
                         <NavLink
                             key={subject.subject_id}

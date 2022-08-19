@@ -8,6 +8,10 @@
     border-radius: $border_radius;
     cursor: pointer;
 
+    &:active {
+        background-color: lighten($primary_color_opacity_1, $amount: 20%);
+    }
+
     @at-root #{&}__large {
         padding: 8px 12px;
     }

@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import classNames from 'classnames';
-// import { useDispatch } from 'react-redux';
 import {
     generatePath,
     NavLink,
@@ -12,8 +11,6 @@ import routes from '../../../constants/routes';
 
 function Subject() {
     const { subjectId } = useParams();
-    // const dispatch = useDispatch();
-
 
     const renderNavigation = () => {
         let itemClassNames = ({ isActive }) => classNames(
@@ -77,50 +74,8 @@ function Subject() {
             <Fragment>
                 <h1 className="main-content__header">{subjectId}</h1>
                 {renderNavigation()}
-                <div className="pl-50 pr-50 pt-20">
+                <div className="main-content__body">
                     <Outlet />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                 </div>
             </Fragment>
         );

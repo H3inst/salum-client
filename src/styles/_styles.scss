@@ -9,6 +9,7 @@
 @import 'utils/utils';
 
 // Elements
+@import 'elements/avatar';
 @import 'elements/button';
 @import 'elements/dropdown';
 @import 'elements/image';
@@ -18,5 +19,6 @@
 
 // Components
 @import 'components/access';
+@import 'components/activities';
 @import 'components/main';
 @import 'components/workspace';

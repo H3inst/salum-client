@@ -1,0 +1,21 @@
+.avatar {
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: $primary_color solid 1px;
+
+    @at-root #{&}-small {
+        width: 30px;
+        height: 30px;
+    }
+
+    @at-root #{&}-medium {
+        width: 45px;
+        height: 45px;
+    }
+
+    @at-root #{&}-large {
+        width: 60px;
+        height: 60px;
+    }
+}

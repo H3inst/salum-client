@@ -14,23 +14,14 @@ const routes = {
         return `${this.workspace}/subject`;
     },
     get workspaceSubjectId() {
-        return `${this.workspaceS}/:subjectId/`;
+        return `${this.workspaceS}/:subjectId`;
     },
-    get workspaceSubjectActivities() {
-        return `activities`;
-    },
-    get workspaceSubjectConversation() {
-        return `conversation`;
-    },
-    get workspaceSubjectAttendance() {
-        return `attendance`;
-    },
-    get workspaceSubjectUsers() {
-        return `users`;
-    },
-    get workspaceSubjectSettings() {
-        return `settings`;
-    }
+    workspaceSubjectActivities: 'activities',
+    workspaceSubjectConversation: 'conversation',
+    workspaceSubjectAttendance: 'attendance',
+    workspaceSubjectUsers: 'users',
+    workspaceSubjectSettings: 'settings'
+
 };
 
 export default Object.freeze(routes);

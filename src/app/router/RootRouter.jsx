@@ -7,6 +7,7 @@ import AccessLogin from '../../components/access/AccessLogin';
 import AccessSignup from '../../components/access/AccessSignup';
 import Workspace from '../../components/workspace/Workspace';
 import Subject from '../../components/workspace/subject/Subject';
+import Activities from '../../components/workspace/subject/activities/Activities';
 
 function RootRouter() {
 
@@ -25,7 +26,7 @@ function RootRouter() {
                     <Route path="*" element={<Navigate to={routes.workspace} />} />
                     <Route path={routes.workspaceSubjectId} element={<Subject />}>
                         <Route index element={<Navigate to={routes.workspaceSubjectActivities} />} />
-                        <Route path={routes.workspaceSubjectActivities} element={<h1>Activities</h1>} />
+                        <Route path={routes.workspaceSubjectActivities} element={<Activities />} />
                         <Route path={routes.workspaceSubjectConversation} element={<h1>Conversation</h1>} />
                         <Route path={routes.workspaceSubjectAttendance} element={<h1>Attendance</h1>} />
                         <Route path={routes.workspaceSubjectUsers} element={<h1>Users</h1>} />

@@ -1,4 +1,6 @@
 .main-content {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     overflow: auto;
 
@@ -9,7 +11,8 @@
     }
 
     @at-root #{&}__body {
-        padding: 20px 50px;
+        flex: 1;
+        padding: 30px 50px;
     }
 }
 
