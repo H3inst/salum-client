@@ -1,8 +1,11 @@
 // Color palette
-$primary_color: #1e3799;
+$primary_color: #004e8c;
 $primary_color_light: #eef1fb;
 $primary_color_opacity_1: rgba($primary_color, 0.1);
 $primary_color_dark: darken($primary_color, 10%);
+
+$success_color: #dff6dd;
+$warning_color: #fed9cc;
 
 $light_color_10: #f4f4f7;
 $light_color_20: #edebe9;

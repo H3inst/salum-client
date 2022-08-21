@@ -1,7 +1,6 @@
 .dropdown {
     padding: 8px 10px;
     width: 100px;
-    height: 39px;
     background-color: $light_color_20;
     font-size: $font_size_normal;
     color: $gray_dark_color;
@@ -29,11 +28,14 @@
     box-shadow: $box_shadow;
     font-size: $font_size_normal;
     z-index: 100;
+    overflow: hidden;
 
     @at-root #{&}__item {
         padding: 5px 10px;
         text-align: left;
         color: $gray_dark_color;
+        user-select: none;
+        cursor: pointer;
 
         &:hover {
             background-color: $light_color_20;

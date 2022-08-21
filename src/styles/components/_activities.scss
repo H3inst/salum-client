@@ -1,8 +1,9 @@
 .activities {
+    max-width: 800px;
 
     @at-root #{&}-post {
         width: 100%;
-        padding: 20px;
+        padding: 20px 20px 10px 20px;
         border: 1px solid $light_color_20;
         border-radius: $border_radius;
         margin-bottom: 30px;
@@ -19,6 +20,22 @@
 
         @at-root #{&}__body {
             margin-top: 15px;
+        }
+
+        @at-root #{&}__status {
+            @extend .typography;
+            @extend .typography__subtitle;
+            padding: 3px 10px;
+            border-radius: $border_radius;
+            background-color: $light_color_20;
+            margin-right: 10px;
+
+            @at-root #{&}-pending {
+                background-color: $warning_color;
+            }
+            @at-root #{&}-success {
+                background-color: $success_color;
+            }
         }
     }
 }

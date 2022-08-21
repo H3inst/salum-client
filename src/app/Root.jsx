@@ -3,11 +3,11 @@ import RootRouter from './router/RootRouter';
 
 function Root() {
 
-    return (
-        <Fragment>
-            <RootRouter />
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <RootRouter />
+    </Fragment>
+  );
 }
 
 export default Root;

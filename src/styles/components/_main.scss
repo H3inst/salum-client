@@ -28,6 +28,7 @@
     top: 0;
     left: 0;
     padding: 0px 50px;
+    z-index: 1000;
 
     @at-root #{&}__item {
         color: $gray_dark_color;

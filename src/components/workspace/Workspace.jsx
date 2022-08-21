@@ -5,21 +5,21 @@ import Topbar from './topbar/Topbar';
 
 function Workspace() {
 
-    const render = () => {
-        return (
-            <section className="workspace-layout">
-                <Topbar />
-                <div className="workspace-body">
-                    <Sidebar />
-                    <main className="main-content">
-                        <Outlet />
-                    </main>
-                </div>
-            </section>
-        );
-    };
+  const render = () => {
+    return (
+      <section className="workspace-layout">
+        <Topbar />
+        <div className="workspace-body">
+          <Sidebar />
+          <main className="main-content">
+            <Outlet />
+          </main>
+        </div>
+      </section>
+    );
+  };
 
-    return render();
+  return render();
 }
 
 export default Workspace;

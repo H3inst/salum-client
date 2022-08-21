@@ -11,36 +11,36 @@ import Activities from '../../components/workspace/subject/activities/Activities
 
 function RootRouter() {
 
-    return (
-        <BrowserRouter>
-            <Routes>
-                {/* Access */}
-                <Route path="*" element={<Navigate to={routes.access} />} />
-                <Route path={routes.access} element={<Access />}>
-                    <Route index element={<AccessLogin />} />
-                    <Route path={routes.accessSignup} element={<AccessSignup />} />
-                </Route>
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Access */}
+        <Route path="*" element={<Navigate to={routes.access} />} />
+        <Route path={routes.access} element={<Access />}>
+          <Route index element={<AccessLogin />} />
+          <Route path={routes.accessSignup} element={<AccessSignup />} />
+        </Route>
 
-                {/* Workspace */}
-                <Route path={routes.workspace} element={<Workspace />}>
-                    <Route path="*" element={<Navigate to={routes.workspace} />} />
-                    <Route path={routes.workspaceSubjectId} element={<Subject />}>
-                        <Route index element={<Navigate to={routes.workspaceSubjectActivities} />} />
-                        <Route path={routes.workspaceSubjectActivities} element={<Activities />} />
-                        <Route path={routes.workspaceSubjectConversation} element={<h1>Conversation</h1>} />
-                        <Route path={routes.workspaceSubjectAttendance} element={<h1>Attendance</h1>} />
-                        <Route path={routes.workspaceSubjectUsers} element={<h1>Users</h1>} />
-                        <Route path={routes.workspaceSubjectSettings} element={<h1>Settings</h1>} />
-                    </Route>
+        {/* Workspace */}
+        <Route path={routes.workspace} element={<Workspace />}>
+          <Route path="*" element={<Navigate to={routes.workspace} />} />
+          <Route path={routes.workspaceSubjectId} element={<Subject />}>
+            <Route index element={<Navigate to={routes.workspaceSubjectActivities} />} />
+            <Route path={routes.workspaceSubjectActivities} element={<Activities />} />
+            <Route path={routes.workspaceSubjectConversation} element={<h1>Conversation</h1>} />
+            <Route path={routes.workspaceSubjectAttendance} element={<h1>Attendance</h1>} />
+            <Route path={routes.workspaceSubjectUsers} element={<h1>Users</h1>} />
+            <Route path={routes.workspaceSubjectSettings} element={<h1>Settings</h1>} />
+          </Route>
 
 
-                    <Route path={routes.workspaceSettings} element={<h1>Settings</h1>}>
+          <Route path={routes.workspaceSettings} element={<h1>Settings</h1>}>
 
-                    </Route>
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
+          </Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default RootRouter;
