@@ -1,5 +1,6 @@
 .activities {
-    max-width: 800px;
+    max-width: 1024px;
+    padding: 30px 50px;
 
     @at-root #{&}-post {
         width: 100%;

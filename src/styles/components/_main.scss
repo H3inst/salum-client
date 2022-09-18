@@ -2,40 +2,48 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    overflow: auto;
+    overflow: hidden;
+    position: relative;
 
-    @at-root #{&}__header {
-        margin: 20px 50px 0px 50px;
-        font-size: $font_size_large;
-        font-weight: $font_weight_bold;
+    @at-root #{&}__spacing {
+        height: 50px;
     }
 
     @at-root #{&}__body {
         flex: 1;
-        padding: 30px 50px;
+        overflow: auto;
     }
 }
 
 .main-navigation {
     width: 100%;
-    margin-top: 15px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid $light_color_30;
     border-collapse: collapse;
     background-color: $white_color;
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 0px 50px;
     z-index: 1000;
 
+    @at-root #{&}__title {
+        width: 100%;
+        max-width: 200px;
+        font-size: $font_size_large;
+        font-weight: $font_weight_bold;
+        margin: 0;
+        padding: 10px;
+        text-overflow: ellipsis;
+    }
+
     @at-root #{&}__item {
         color: $gray_dark_color;
         font-size: $font_size_normal;
         font-weight: $font_weight_semibold;
-        margin-right: 20px;
-        padding: 10px 0px;
+        margin-right: 15px;
+        padding: 15px 0px;
         cursor: pointer;
         user-select: none;
         text-decoration: none;

@@ -1,5 +1,5 @@
 .dropdown {
-    padding: 8px 10px;
+    padding: 0px 10px;
     width: 100px;
     background-color: $light_color_20;
     font-size: $font_size_normal;
@@ -11,6 +11,7 @@
     border-radius: $border_radius;
     user-select: none;
     outline: 0;
+    line-height: 36px;
 
     &:active {
         background-color: $light_color_30;

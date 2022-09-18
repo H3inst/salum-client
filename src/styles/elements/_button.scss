@@ -1,10 +1,11 @@
 .button {
-    padding: 10px 12px;
+    padding: 6px 12px;
     background-color: $primary_color_opacity_1;
     color: $primary_color;
     font-size: $font_size_normal;
     font-weight: $font_weight_semibold;
     border: 0;
+    line-height: 2.4rem;
     border-radius: $border_radius;
     cursor: pointer;
 
@@ -13,7 +14,8 @@
     }
 
     @at-root #{&}__large {
-        padding: 12px;
+    line-height: 1.8rem;
+    padding: 12px;
     }
 
     @at-root #{&}__primary {
@@ -34,6 +36,12 @@
     align-items: center;
     border-radius: 50%;
     font-size: $font_size_normal;
+
+    @at-root #{&}__large {
+        width: 40px;
+        height: 40px;
+        font-size: $font_size_large;
+    }
 
     &:active {
         background-color: $light_color_20;

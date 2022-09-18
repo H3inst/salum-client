@@ -4,13 +4,15 @@ import {
   generatePath,
   NavLink,
   Outlet,
-  useParams
+  useParams,
+  useLocation
 } from 'react-router-dom';
 
 import routes from '../../../constants/routes';
 
 function Subject() {
   const { subjectId } = useParams();
+  const { pathname } = useLocation();
 
   const renderNavigation = () => {
     let itemClassNames = ({ isActive }) => classNames(
@@ -20,6 +22,7 @@ function Subject() {
 
     return (
       <div className="main-navigation">
+        <h1 className="main-navigation__title">{subjectId}</h1>
         <NavLink
           className={itemClassNames}
           to={generatePath(
@@ -70,11 +73,16 @@ function Subject() {
   };
 
   const render = () => {
+    let splittedPathname = pathname.split('/');
+    let currentLocation = splittedPathname[splittedPathname.length - 1];
+    
     return (
       <Fragment>
-        <h1 className="main-content__header">{subjectId}</h1>
         {renderNavigation()}
-        <div className="main-content__body">
+        <div className="main-content__spacing"></div>
+        <div className="main-content__body" style={{
+          overflowY: currentLocation === 'conversation' && 'hidden'
+        }}>
           <Outlet />
         </div>
       </Fragment>
