@@ -13,6 +13,11 @@
     outline: 0;
     line-height: 36px;
 
+    .material-symbols-sharp {
+        font-size: calc($font_size_normal + 6px);
+
+    }
+
     &:active {
         background-color: $light_color_30;
     }

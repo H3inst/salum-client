@@ -1,14 +1,14 @@
 // import classNames from 'classnames';
 import { Outlet } from 'react-router-dom';
 import Sidebar from './sidebar/Sidebar';
-import Topbar from './topbar/Topbar';
+// import Topbar from './topbar/Topbar';
 
 function Workspace() {
 
   const render = () => {
     return (
       <section className="workspace-layout">
-        <Topbar />
+        {/* <Topbar /> */}
         <div className="workspace-body">
           <Sidebar />
           <main className="main-content">

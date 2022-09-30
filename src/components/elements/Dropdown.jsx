@@ -36,7 +36,9 @@ function Dropdown({ width, placeholder, options = [], onChange = () => { } }) {
           style={{ width }}
         >
           <span>{selectedValue || placeholder}</span>
-          <i className="ms-Icon ms-Icon--ChevronDown"></i>
+          <span className="material-symbols-sharp">
+            expand_more
+          </span>
         </div>
         {isMenuOpen && (
           <div className="dropdown-list">

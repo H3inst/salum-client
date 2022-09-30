@@ -5,13 +5,15 @@ function Conversation() {
       <section className="conversation">
         <div className="conversation__container">
           <div className="conversation__container__contact-message">
-            
+
           </div>
           <div className="conversation__container__own-message"></div>
         </div>
         <div className="conversation__message-bar">
           <div className="icon-button icon-button__large">
-            <i className="ms-Icon ms-Icon--Attach"></i>
+            <span className="material-symbols-sharp">
+              attach_file_add
+            </span>
           </div>
           <input
             className="conversation__message-bar__input"

@@ -30,7 +30,9 @@ function Activities() {
                 </p>
               </div>
               <div className="icon-button">
-                <i className="ms-Icon ms-Icon--MoreVertical" aria-hidden="true"></i>
+                <span className="material-symbols-sharp">
+                  more_vert
+                </span>
               </div>
             </div>
             <div className="activities-post__body">

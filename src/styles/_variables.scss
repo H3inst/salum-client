@@ -1,5 +1,5 @@
 // Color palette
-$primary_color: #004e8c;
+$primary_color: #ff4d0f;
 $primary_color_light: #eef1fb;
 $primary_color_opacity_1: rgba($primary_color, 0.1);
 $primary_color_dark: darken($primary_color, 10%);
@@ -24,6 +24,7 @@ $font_size_small: 1.2rem;
 $font_weight_black: 900;
 $font_weight_bold: 700;
 $font_weight_semibold: 600;
+$font_weight_medium: 500;
 $font_weight_normal: 400;
 
 // Others

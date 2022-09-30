@@ -22,11 +22,25 @@
 }
 
 .workspace-sidebar {
-    min-width: 300px;
+    min-width: 260px;
     height: 100%;
     background-color: $light_color_10;
     border-right: 1px solid $light_color_20;
     padding: 10px 20px 20px 20px;
+
+    @at-root #{&}__logo {
+        @extend .typography, .typography__header;
+        font-weight: $font_weight_black;
+        color: $primary_color;
+        text-align: center;
+
+        span {
+            background-color: $primary_color;
+            color: $white_color;
+            padding: 4px 6px;
+            border-radius: $border_radius;
+        }
+    }
 
     @at-root #{&}__header {
         width: 100%;
@@ -59,9 +73,9 @@
         margin-top: 10px;
 
         @at-root #{&}-item {
-            padding: 10px;
+            padding: 6px 10px;
             font-size: $font_size_normal;
-            font-weight: $font_weight_semibold;
+            font-weight: $font_weight_medium;
             cursor: pointer;
             border-radius: $border_radius;
             display: flex;

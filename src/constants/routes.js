@@ -9,6 +9,9 @@ const routes = {
 
     // Workspace
     workspace: '/workspace',
+    workspaceCalendar: 'calendar',
+    workspaceNotes: 'notes',
+    workspaceScores: 'scores',
     
     get workspaceS() {
         return `${this.workspace}/subject`;
