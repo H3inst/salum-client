@@ -11,7 +11,17 @@
     background-color: $primary_color;
     display: flex;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 30px;
+
+    span {
+        @extend .typography;
+        background-color: white;
+        font-weight: $font_weight_black;
+        color: $primary_color;
+        padding: 0px 5px;
+        border-radius: $border_radius;
+        font-size: 1.5rem;
+    }
 }
 
 .workspace-body {
@@ -22,17 +32,17 @@
 }
 
 .workspace-sidebar {
-    min-width: 260px;
+    min-width: 270px;
     height: 100%;
-    background-color: $light_color_10;
     border-right: 1px solid $light_color_20;
-    padding: 10px 20px 20px 20px;
+    padding: 15px 20px 20px 20px;
 
     @at-root #{&}__logo {
         @extend .typography, .typography__header;
         font-weight: $font_weight_black;
         color: $primary_color;
         text-align: center;
+        margin-bottom: 20px;
 
         span {
             background-color: $primary_color;
@@ -86,7 +96,6 @@
 
             &:hover {
                 background-color: $primary_color_opacity_1;
-                color: $primary_color;
             }
         }
 

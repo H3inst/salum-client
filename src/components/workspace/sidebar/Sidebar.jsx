@@ -26,8 +26,7 @@ function Sidebar() {
   const render = () => {
     return (
       <div className="workspace-sidebar">
-        <h1 className="workspace-sidebar__logo">toopin <span>Salum</span></h1>
-        <div className="divider mb-10 mt-10"></div>
+        {/* <h1 className="workspace-sidebar__logo">toopin <span>Salum</span></h1> */}
         <div className="workspace-sidebar__header">
           <img src="https://miro.medium.com/max/785/0*8or0oFmHDRKnlETg" alt="" className="workspace-sidebar__header-avatar" />
           <p className="workspace-sidebar__header-name">Yesid Manjarres</p>
@@ -95,7 +94,7 @@ function Sidebar() {
                 isActive && "list-item__active"
               )}
             >
-              <div className="circle mr-20" style={{ backgroundColor: '#aaa' }}></div>
+              <div className="circle" style={{ backgroundColor: '#aaa', marginRight: 15 }}></div>
               {subject.subject_name}
             </NavLink>
           ))}

@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import Dropdown from '../../../elements/Dropdown';
 
 function Activities() {
@@ -40,14 +39,12 @@ function Activities() {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate vel magnam voluptatum veritatis eius ex recusandae nulla beatae id minima facere quis illo praesentium ad, voluptas ducimus suscipit, at quidem?
               </p>
               <div className="divider mt-10 mb-10"></div>
-              <div className="flex justify-end align-center">
-                <p className={classNames(
-                  "activities-post__status",
-                  "activities-post__status-success"
-                )}>
-                  Submitted
-                </p>
-                <button className="button">Submit assignment</button>
+              <div className="flex align-center">
+                <input 
+                type="text" 
+                className="textfield w-100" 
+                placeholder="Add a comment in this activity"
+                />
               </div>
             </div>
           </article>

@@ -8,6 +8,7 @@
         border: 1px solid $light_color_20;
         border-radius: $border_radius;
         margin-bottom: 30px;
+        background-color: $white_color;
 
         @at-root #{&}__header {
             display: flex;

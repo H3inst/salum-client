@@ -1,7 +1,7 @@
 .dropdown {
     padding: 0px 10px;
     width: 100px;
-    background-color: $light_color_20;
+    background-color: $light_color_15;
     font-size: $font_size_normal;
     color: $gray_dark_color;
     cursor: pointer;
@@ -19,7 +19,7 @@
     }
 
     &:active {
-        background-color: $light_color_30;
+        background-color: $light_color_15;
     }
 
 }
@@ -44,7 +44,7 @@
         cursor: pointer;
 
         &:hover {
-            background-color: $light_color_20;
+            background-color: $light_color_15;
         }
     }
 }

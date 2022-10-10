@@ -1,5 +1,5 @@
 // Color palette
-$primary_color: #ff4d0f;
+$primary_color: #d83b01;
 $primary_color_light: #eef1fb;
 $primary_color_opacity_1: rgba($primary_color, 0.1);
 $primary_color_dark: darken($primary_color, 10%);
@@ -7,9 +7,10 @@ $primary_color_dark: darken($primary_color, 10%);
 $success_color: #dff6dd;
 $warning_color: #fed9cc;
 
-$light_color_10: #f4f4f7;
-$light_color_20: #e9e9ed;
-$light_color_30: #dddde1;
+$light_color_10: #F4F5F7;
+$light_color_15: #efefef;
+$light_color_20: #e5e5e7;
+$light_color_25: #dddde1;
 
 $white_color: #FFFFFF;
 $black_color: #000000;

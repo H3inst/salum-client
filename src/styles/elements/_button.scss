@@ -8,6 +8,7 @@
     line-height: 2.4rem;
     border-radius: $border_radius;
     cursor: pointer;
+    white-space: nowrap;
 
     &:active {
         background-color: lighten($primary_color_opacity_1, $amount: 20%);
